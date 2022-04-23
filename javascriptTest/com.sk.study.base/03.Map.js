@@ -10,7 +10,13 @@ console.log(nameAlias)
 // 2：表示Map对象有两个元素，key分别是苏轼、诸葛亮。 周润发这个属性是作为Object属性，并不是Map的key
 
 
-// 方式二： 类似Map，但其实是Object
+// 方式二：推荐
+nameAlias = new Map([["苏轼","东坡居士"],["诸葛亮","孔明"]])
+nameAlias.set(100, "周润发")
+console.log(nameAlias)
+// Map(3) { '苏轼' => '东坡居士', '诸葛亮' => '孔明', 100 => '周润发' }
+
+// 方式三： 类似Map，但其实是Object
 nameAlias2 = {"苏轼": "东坡居士"}
 nameAlias2["诸葛亮"] = "孔明"
 console.log(nameAlias2.constructor)  // [Function: Object]

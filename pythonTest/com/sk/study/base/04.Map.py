@@ -1,8 +1,15 @@
 # coding:utf-8
 
+# 方式1：
 nameAlias = {"苏轼": "东坡居士"}
 nameAlias["诸葛亮"] = "孔明"
 print(nameAlias)  # {'苏轼': '东坡居士', '诸葛亮': '孔明'}
+
+# 方式二
+# nameAlias2 = map()
+# nameAlias2["诸葛亮"] = "孔明"
+# print(nameAlias2)
+
 
 print("----------------遍历----------------------")
 nameAlias = {"苏轼": "东坡居士", "诸葛亮": "孔明"}
